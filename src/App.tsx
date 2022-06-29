@@ -1,13 +1,9 @@
-import Header from "./Header/Header";
-import {AuthContextProvider} from "./contexts/UserContext";
+import {Header} from "./components";
+import {AuthContextProvider} from "./contexts";
 
-import AppRoutes from './AppRoutes/AppRoutes';
+import {AppRoutes} from './components';
 
 import './App.css';
-
-export interface CurrentUser {
-    username: string;
-}
 
  const App = () => {
     return (

@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-import {CurrentUser} from "../App";
+import {CurrentUser} from "../domain";
 
 export const useCurrentUser = () => {
     const [currentUser, setCurrentUser] = useState<CurrentUser | null>(null);

@@ -1,6 +1,6 @@
 import {useEffect, useRef, useState} from "react";
 
-const useTimer = () => {
+export const useTimer = () => {
     const [count, setCount] = useState(0);
 
     const timerRef = useRef<NodeJS.Timer>();
@@ -32,5 +32,3 @@ const useTimer = () => {
 
     return {count, start, stop};
 };
-
-export default useTimer;

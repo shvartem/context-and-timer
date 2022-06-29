@@ -1,8 +1,10 @@
 import {NavLink} from "react-router-dom";
 
-import styles from './Header.module.scss';
-import {useAuthContext} from "../contexts/UserContext";
 import clsx from "clsx";
+
+import {useAuthContext} from "../../contexts";
+
+import styles from './Header.module.scss';
 
 const Header = () => {
     const {currentUser, logout} = useAuthContext();

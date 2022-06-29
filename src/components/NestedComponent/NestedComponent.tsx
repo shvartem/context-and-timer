@@ -1,4 +1,4 @@
-import {useTimerContext} from "../contexts/TimerContext";
+import {useTimerContext} from "../../contexts";
 
 const NestedComponent = () => {
     const {count} = useTimerContext();

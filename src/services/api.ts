@@ -1,7 +1,4 @@
-export interface User {
-    username: string;
-    password: string;
-}
+import {User} from "../domain";
 
 const db: User[] = [
     {

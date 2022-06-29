@@ -1,5 +1,6 @@
-import TimerComponent from "../TimerComponent/TimerComponent";
-import {useAuthContext} from "../contexts/UserContext";
+import {TimerComponent} from "../../components";
+
+import {useAuthContext} from "../../contexts";
 
 
 const Main = () => {
@@ -11,6 +12,7 @@ const Main = () => {
 
             <h2>Start editing to see some magic happen!</h2>
 
+            {/*здесь устанавливается локальный таймер*/}
             <TimerComponent />
         </>
     );

@@ -1,6 +1,6 @@
 import {ChangeEvent, FormEvent, useId, useState} from 'react';
 
-import {User} from '../api';
+import {User} from "../../domain";
 
 import styles from './Login.module.scss';
 

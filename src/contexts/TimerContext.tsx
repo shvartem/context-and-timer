@@ -7,13 +7,10 @@
 */
 
 import {createContext, ReactNode, useContext} from "react";
-import useTimer from "../hooks/useTimer";
 
-interface TimerContextType {
-    count: number;
-    start: () => void;
-    stop: () => void;
-}
+import {useTimer} from "../application";
+import {TimerContextType} from "../domain";
+
 
 export const TimerContext = createContext<TimerContextType | null>(null);
 

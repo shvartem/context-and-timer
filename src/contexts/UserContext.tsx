@@ -14,14 +14,8 @@
 
 import {createContext, ReactNode, useContext} from "react";
 
-import {CurrentUser} from "../App";
-import {useCurrentUser} from "../hooks/useCurrentUser";
-
-type AuthContextType = {
-    currentUser: CurrentUser | null;
-    login: (authData: CurrentUser) => void;
-    logout: () => void;
-}
+import {useCurrentUser} from "../application";
+import {AuthContextType} from "../domain";
 
 const initialAuthContext: AuthContextType = {
     currentUser: null,

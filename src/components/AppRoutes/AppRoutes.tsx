@@ -1,20 +1,18 @@
 import {Route, Routes, useNavigate, Outlet} from "react-router-dom";
 
-import ProtectedRoute from "../ProtectedRoute/ProtectedRoute";
-import Main from "../Main/Main";
-import Login from "../Login/Login";
-import TimerComponent from "../TimerComponent/TimerComponent";
-import NestedComponent from "../NestedComponent/NestedComponent";
 
-import {useAuthContext} from "../contexts/UserContext";
-import {TimerContextProvider} from "../contexts/TimerContext";
-import {authorize, User} from "../api";
+import {Login, Main, NestedComponent, ProtectedRoute, TimerComponent} from '../../components';
+
+import {useAuthContext, TimerContextProvider} from "../../contexts";
+import {authorize} from "../../services";
+import {User} from "../../domain";
 
 const AppRoutes = () => {
     const {currentUser, login} = useAuthContext();
 
     const navigate = useNavigate();
 
+    // не знаю, как более грамотно организовать код
     const loginUser = (userData: User) => {
         const result = authorize(userData);
 
@@ -55,6 +53,7 @@ const AppRoutes = () => {
                 <Route
                     path="nested"
                     element={
+                        // здесь устанавливается глобальный таймер для контекста, это можно увидеть в NestedComponent
                         <TimerComponent />
                     }
                 />

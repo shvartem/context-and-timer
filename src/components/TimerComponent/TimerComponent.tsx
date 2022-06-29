@@ -1,4 +1,4 @@
-import {useTimerContext} from "../contexts/TimerContext";
+import {useTimerContext} from "../../contexts";
 
 const TimerComponent = () => {
     const {count, start, stop} = useTimerContext();
