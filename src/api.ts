@@ -14,7 +14,7 @@ const db: User[] = [
     },
     {
         username: 'shvartem',
-        password: 'shvartem',
+        password: '',
     },
 ];
 

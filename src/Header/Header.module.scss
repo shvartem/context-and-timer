@@ -1,0 +1,52 @@
+.header {
+  .navigate {
+    display: flex;
+
+    .link {
+      box-sizing: border-box;
+      padding: 12px;
+      margin-right: 8px;
+
+      border-radius: 8px;
+      background-color: rgba(40, 44, 52, 0.1);
+
+      color: #282c34;
+      text-decoration: none;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      .linkText {
+        margin: 0;
+      }
+    }
+
+    .activeLink {
+      text-decoration: underline;
+    }
+
+    .user {
+      box-sizing: border-box;
+      padding: 12px;
+      margin: 0 12px;
+    }
+
+    .logoutButton {
+      box-sizing: border-box;
+      padding: 12px;
+
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+
+      background-color: rgba(40, 44, 52, 0.1);
+
+      transition: opacity ease-in 0.2s;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}

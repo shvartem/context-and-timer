@@ -1,0 +1,35 @@
+.root {
+  box-sizing: border-box;
+  padding: 48px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .form {
+    box-sizing: border-box;
+    padding: 16px;
+
+    border: 1px solid #282c34;
+    border-radius: 4px;
+
+    .input {
+      margin-bottom: 8px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .label {
+        display: inline-block;
+        min-width: 80px;
+
+        cursor: pointer;
+      }
+    }
+
+    .submitButton {
+      margin-top: 16px;
+    }
+  }
+}
